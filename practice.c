@@ -8,9 +8,10 @@ int main ()
     int q = 2;
     for(int i = 0; i <= 15; i++){
         for(int w = 1; w <= i; w++){
-        q = q*q;
-        printf("%d\n", q*q);
+        q *= w;
+        printf("%d\n", q);
         }
+        return 0;
     }
 }
 // вывести все степени 2 с 0 до 15
