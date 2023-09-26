@@ -17,13 +17,13 @@ int main ()
 {
     int i = 1;
     //int q = 0;
-    int result = 0;
+    //int result = 0;
     while(i <= 10){
-        //i++;
-        int q = 1;
+        //i++;        чат гпт
+        int q = 1; // чат гпт
         while(q <= 10){
-            //q++;
-            result = i*q;
+            //q++;    чат гпт
+            int result = i*q;
             printf("%d*%d = %d\n", i, q, result);
             q++;
         }
