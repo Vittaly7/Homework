@@ -19,10 +19,10 @@ int main ()
     //int q = 0;
     //int result = 0;
     while(i <= 10){
-        //i++;        чат гпт
-        int q = 1; // чат гпт
+        //i++;
+        int q = 1;
         while(q <= 10){
-            //q++;    чат гпт
+            //q++;    
             int result = i*q;
             printf("%d*%d = %d\n", i, q, result);
             q++;
