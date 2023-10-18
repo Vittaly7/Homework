@@ -10,9 +10,9 @@ int main ()
         int result = 1;
         int e = 0;
             while(e = 1 && e <= i){
+                e++;
                 result *= i;
                 printf("%d\n", result);
-                e++;
             }
     }
     return 0;
