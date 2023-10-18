@@ -3,22 +3,22 @@
 int main()
 {
     char c;
-    int x, y;
+    double x, y;
     for (;;)
     {
         printf("input 2 numbers and a character: \n");
-        scanf("%d %d %c", &x, &y, &c);
+        scanf("%lf %lf %c", &x, &y, &c);
 
             if (c == '*')
             {
-                int res = x*y;
-                printf("result is: %d\n", res);
+                double res = x*y;
+                printf("result is: %.3lf\n", res);
             }
                 else if (y != 0 && c == '/')
                 
                     {
-                        int res = x/y;
-                        printf("division result is: %d\n", res);
+                        double res = x/y;
+                        printf("division result is: %.3lf\n", res);
                     }
                         else
                         {
