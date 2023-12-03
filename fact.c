@@ -157,11 +157,12 @@ int main(void){
 #include <time.h>
 
 int sort_rise_fall(int array[2][10], int temp);
+
 int main (){
     int temp = 0;
     srand(time(NULL));
-    int array [2][10]; //= {{3, 5, 7, 9, 3, 4, 1, 0, 8, 6},
-                         //{6, 1, 5, 2, 3, 0, 7, 8, 9, 4}};
+    int array [2][10]; /*= {{3, 5, 7, 9, 3, 4, 1, 0, 8, 6},
+                         {6, 1, 5, 2, 3, 0, 7, 8, 9, 4}};*/
     for(int i  = 0; i < 2; ++i){
         for(int q = 0; q < 10; ++q){
             array [i][q] = rand() % 100;
