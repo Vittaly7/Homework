@@ -1,23 +1,20 @@
-/*#include <stdio.h>
+#include <stdio.h>
+
 
 int main ()
 {
-    for(int i = 1; i <= 1000; i++){
-        int sum  = sum + i;
-        printf("%d\n", sum);
-    }
-    return 0;
-}*/
-#include <stdio.h>
-
-int main() {
-    int sum = 0;
+    int a = 0;
+    scanf("%d", a);
     
-    for (int i = 1; i <= 1000; i++) {
-        sum += i;
-    }
-    
-    printf("Сумма чисел от 1 до 1000: %d\n", sum);
+    fact(a);
     
     return 0;
 }
+
+int fact(int a){
+
+    if(a == 1){
+        a * (a - 1);
+    }
+}
+
