@@ -371,4 +371,3 @@ int check(int N){
             return 1;
     }
 }
-
