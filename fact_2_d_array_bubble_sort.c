@@ -63,7 +63,7 @@ int num_5(int n) {
     num_5(n);        
 }*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 
 int prime(int K, int M);
 
@@ -83,7 +83,7 @@ int prime(int K, int M){
         printf("%d ", K);
     K++;
     prime(K, M);
-}*/
+}
 /*#include <stdio.h>
 
 int main() {
@@ -153,7 +153,7 @@ int main(void){
     printf("Not found!\n");
     return 0;
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 #include <time.h>
 
 int sort_rise_fall(int array[2][10], int temp);
@@ -161,8 +161,8 @@ int sort_rise_fall(int array[2][10], int temp);
 int main (){
     int temp = 0;
     srand(time(NULL));
-    int array [2][10]; /*= {{3, 5, 7, 9, 3, 4, 1, 0, 8, 6},
-                         {6, 1, 5, 2, 3, 0, 7, 8, 9, 4}};*/
+    int array [2][10]; //= {{3, 5, 7, 9, 3, 4, 1, 0, 8, 6},
+                         //{6, 1, 5, 2, 3, 0, 7, 8, 9, 4}};
     for(int i  = 0; i < 2; ++i){
         for(int q = 0; q < 10; ++q){
             array [i][q] = rand() % 100;
@@ -176,7 +176,8 @@ int main (){
     }
     printf("\n");
 
-    sort_rise_fall(array, temp);    
+    sort_rise_fall(array, temp);
+
     for(int i  = 0; i < 2; ++i){        
         for(int q = 0; q < 10; ++q){
             printf("%d ", array [i][q]);
@@ -210,4 +211,151 @@ int main (){
             }
         }
     }
+}*/
+
+/*#include<stdio.h>
+
+int add(int arr_1[3][3], int arr_2[3][3], int result[3][3]);
+int sub(int arr_1[3][3], int arr_2[3][3], int result[3][3]);
+int mult(int arr_1[3][3], int arr_2[3][3], int result[3][3]);
+int TRANS(int arr_1[3][3], int result[3][3]);
+
+int main(){
+
+    int arr_1[3][3] = {{1, 2, 3},
+                       {4, 5, 6},
+                       {7, 8, 9}};
+    int arr_2[3][3] = {{1, 2, 3},
+                       {4, 5, 6},
+                       {7, 8, 9}};
+    int result[3][3];
+
+    add(arr_1, arr_2, result);
+    printf("Addition:\n");
+    for(int i = 0; i < 3; ++i){
+        for(int j = 0; j < 3; ++j){
+            printf("%4d ", result[i][j]);
+
+        }
+    printf("\n");
+    }
+    printf("\n");
+    sub(arr_1, arr_2, result);
+    printf("Subtraction:\n");
+    for(int i = 0; i < 3; ++i){
+        for(int j = 0; j < 3; ++j){
+            printf("%4d ", result[i][j]);
+
+        }
+    printf("\n");
+    }
+    printf("\n");
+    mult(arr_1, arr_2, result);
+    printf("Multiplication:\n");
+    for(int i = 0; i < 3; ++i){
+        for(int j = 0; j < 3; ++j){
+            printf("%4d ", result[i][j]);
+
+        }
+    printf("\n");
+    }
+    printf("\n");
+    TRANS(arr_1, result);
+    printf("Transpose:\n");
+    for(int i = 0; i < 3; ++i){
+        for(int j = 0; j < 3; ++j){
+            printf("%4d ", result[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
 }
+int add(int arr_1[3][3], int arr_2[3][3], int result[3][3]){
+    
+    for(int i = 0; i < 3; ++i){
+        for(int j = 0; j < 3; ++j){
+            result[i][j] = arr_1[i][j] + arr_2[i][j];
+        }
+    }
+}
+int sub(int arr_1[3][3], int arr_2[3][3], int result[3][3]){
+    for(int i = 0; i < 3; ++i){
+        for(int j = 0; j < 3; ++j){
+            result[i][j] = arr_1[i][j] - arr_2[i][j];
+        }
+    }
+}
+int mult(int arr_1[3][3], int arr_2[3][3], int result[3][3]){
+    for(int i = 0; i < 3; ++i)
+        for(int q = 0; q < 3; ++q){
+            for(int j = 0; j < 3; ++j)
+            result[i][q] += (arr_1[i][j] * arr_2[j][q]);
+        }
+    }
+int TRANS(int arr_1[3][3], int result[3][3]){
+    for(int i = 0; i < 3; ++i){
+        for(int j = 0; j < 3; ++j){
+            result[j][i] = arr_1[i][j];
+        }
+    }
+
+}
+        /*for(int j = 0; j < 3; ++j){
+            result[0][0] += (arr_1[0][j] * arr_2[j][0]);
+        }
+        for(int j = 0; j < 3; ++j){
+            result[0][1] += (arr_1[0][j] * arr_2[j][1]);
+        }
+        for(int j = 0; j < 3; ++j){
+            result[0][2] += (arr_1[0][j] * arr_2[j][2]);
+        }
+        
+         for(int j = 0; j < 3; ++j){
+            result[1][0] += (arr_1[1][j] * arr_2[j][0]);
+        }
+        for(int j = 0; j < 3; ++j){
+            result[1][1] += (arr_1[1][j] * arr_2[j][1]);
+        }
+        for(int j = 0; j < 3; ++j){
+            result[1][2] += (arr_1[1][j] * arr_2[j][2]);
+        }
+    }*/
+    /*#include<stdio.h>
+
+    #define A 3
+    #define B 4
+    #define C 3
+
+    int mult (int arr1[A][B], int arr2[B][C], int res[A][C]);
+
+    int main (){
+
+        int arr1[A][B] = {{1,2,3,4},
+                          {4,3,2,1},
+                          {1,2,3,4}};
+        int arr2[B][C] = {{9,8,7},
+                          {7,8,9},
+                          {6,5,4},
+                          {3,2,1}};
+        int res[A][C];
+        mult (arr1, arr2, res);
+        for(int i = 0; i < A; ++i){
+            for(int j = 0; j < C; ++j){
+            printf("%4d ", res[i][j]);
+            }
+            printf("\n");
+        }
+
+        return 0;
+    }
+    int mult (int arr1[A][B], int arr2[B][C], int res[A][C]){
+        for(int i = 0; i < A; ++i){
+            for(int j = 0; j < C; ++j){
+                res[A][C] = 0;
+                for(int k = 0; k < B; ++k){
+                res[i][j] += arr1[i][k] * arr2[k][j];
+                }
+            }
+        }
+    }*/
